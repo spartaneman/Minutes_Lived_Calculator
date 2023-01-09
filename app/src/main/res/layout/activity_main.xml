@@ -12,13 +12,39 @@
     >
 
     <TextView
-        android:id="@+id/change"
+        android:id="@+id/calculateView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:text="CALCULATE YOUR"
         android:textColor="@color/textRed"
         android:textSize="25dp"
+        android:textStyle="bold"
          />
+
+    <TextView
+        android:id="@+id/ageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="AGE"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:background="#2a9d8f"
+        android:padding="5dp"
+        />
+
+    <TextView
+        android:id="@+id/minutesView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="IN MINUTES"
+        android:textColor="@color/textRed"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        />
+
 
 </LinearLayout>
