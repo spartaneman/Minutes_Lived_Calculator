@@ -9,6 +9,7 @@
     android:gravity="center_horizontal"
     android:orientation="vertical"
     android:background="@color/backgroundColor"
+    android:padding="16dp"
     >
 
     <TextView
@@ -36,7 +37,7 @@
         />
 
     <TextView
-        android:id="@+id/minutesView"
+        android:id="@+id/inMinutesView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
@@ -56,5 +57,47 @@
         android:backgroundTint="#219ebc"
         />
 
+    <TextView
+        android:id="@+id/dateView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="date"
+        android:textColor="@color/textRed"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        />
 
+    <TextView
+        android:id="@+id/selectView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Selected Date"
+        android:textColor="@color/lightGrey"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/minutesView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="minutes"
+        android:textColor="@color/textRed"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/selectDateView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Total Minutes"
+        android:textColor="@color/lightGrey"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        />
 </LinearLayout>
