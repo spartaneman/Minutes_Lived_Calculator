@@ -48,6 +48,17 @@ class MainActivity : AppCompatActivity() {
                 val sdf = SimpleDateFormat("dd/MM/yyyy", Locale.ENGLISH)
                 val theDate = sdf.parse(selectedDate)
 
+                //This will return the number of milliseconds that have passed since 1970
+                //To get it into minutes we must divide by 60000
+                val selectedDateInMinutes = theDate.time/60000
+
+                //get the current date in milliseconds from 1970
+                val currentDate = sdf.parse(sdf.format(System.currentTimeMillis()))
+                val currentMinutes = currentDate.time/60000
+
+                val minutesPassed = currentMinutes - selectedDateInMinutes
+                tvTotalMinutes?.text = minutesPassed.toString()
+
 
             },
             year, month,day).show()
